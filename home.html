@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crachá Digital - Violetta</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-top: 60px;
+        background-color: #232323;
+        color: #f5d7f5;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ee82ee;
+        color: #f5d7f5;
+        padding: 15px 20px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        font-weight: bold;
+      }
+
+      section {
+        padding: 20px;
+        background-color: #121212;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+
+      h2 {
+        border-bottom: 2px solid #ee82ee;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+
+      .qr {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .qr img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .info-item {
+        margin-bottom: 10px;
+      }
+
+      .info-item strong {
+        display: inline-block;
+        width: 150px;
+      }
+
+      a {
+        color: #d98cb3; /* rosa pastel claro */
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #c278a4; /* tom levemente mais escuro no hover */
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#dados">Dados Gerais</a>
+        <a href="#filiacao">Filiação</a>
+        <a href="#laudo">Laudo</a>
+        <a href="#leis">Leis</a>
+      </nav>
+    </header>
+
+    <section id="foto">
+      <div style="text-align: center">
+        <img
+          src="foto.jpg"
+          alt="Foto 3x4"
+          style="
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          "
+        />
+        <p><small>Foto 3x4</small></p>
+      </div>
+    </section>
+
+    <section id="dados">
+      <h2>Dados Gerais</h2>
+      <div class="info-item">
+        <strong>Nome:</strong> Maria Violetta Ribeiro de Melo
+      </div>
+      <div class="info-item">
+        <strong>Data de Nascimento:</strong>
+        <span id="data-nasc" data-nasc="2022-07-15">15/07/2022</span> —
+        <span id="idade"></span> anos
+      </div>
+      <div class="info-item">
+        <strong>CID:</strong> 6A02.1 [Transtorno do Espectro do Autismo (TEA)
+        com Transtorno do Desenvolvimento Intelectual (TDI) e com
+        comprometimento leve ou ausente da linguagem funcional]
+      </div>
+    </section>
+
+    <section id="filiacao">
+      <h2>Filiação</h2>
+      <div class="info-item">
+        <strong>Nome da Mãe:</strong> Jéssika Ribeiro de Lacerda
+      </div>
+      <div class="info-item">
+        <strong>Nome do Pai:</strong> Thyago Ezequiel de Melo
+      </div>
+      <div class="info-item">
+        <strong>Contatos de Emergência:</strong>
+      </div>
+      <ul>
+        <li>
+          Thyago (Pai) —
+          <a href="https://wa.me/5583996576222" target="_blank"
+            >(83) 9.9657-6222</a
+          >
+        </li>
+        <li>
+          Jéssika (Mãe) —
+          <a href="https://wa.me/5583999930926" target="_blank"
+            >(83) 9.9993-0926</a
+          >
+        </li>
+        <li>
+          Maryanna (Tia) —
+          <a href="https://wa.me/5583998145671" target="_blank"
+            >(83) 9814-5671</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section id="laudo">
+      <h2>Laudo Médico</h2>
+      <p>
+        Segue anexo o laudo médico atestando o diagnóstico dentro do Transtorno
+        do Espectro Autista (TEA).
+      </p>
+      <p>
+        <a href="laudo.pdf" target="_blank"
+          >Clique aqui para acessar o laudo (PDF)</a
+        >
+      </p>
+    </section>
+
+    <section id="leis">
+      <h2>Leis de Amparo</h2>
+      <ul>
+        <li>
+          <a
+            href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12764.htm"
+            target="_blank"
+          >
+            Lei 12.764/2012 — Política Nacional de Proteção dos Direitos da
+            Pessoa com TEA
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm"
+            target="_blank"
+          >
+            Lei 13.146/2015 — Estatuto da Pessoa com Deficiência (LBI)
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://www.planalto.gov.br/ccivil_03/leis/L10048.htm"
+            target="_blank"
+          >
+            Lei 10.048/2000 — Prioridade de Atendimento
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://www.planalto.gov.br/ccivil_03/leis/L10098.htm"
+            target="_blank"
+          >
+            Lei 10.098/2000 — Acessibilidade
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14624.htm"
+            target="_blank"
+          >
+            Lei 14.624/2023 — Cordão de fita
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="qr">
+      <h3>QR Code para este Crachá</h3>
+      <img src="qrcode.png" alt="QR Code para o crachá digital" />
+      <p><small>Escaneie para acessar esta página online</small></p>
+    </div>
+    <script>
+      function calcularIdade(dataNasc) {
+        const hoje = new Date();
+        const nascimento = new Date(dataNasc);
+        let idade = hoje.getFullYear() - nascimento.getFullYear();
+        const mes = hoje.getMonth() - nascimento.getMonth();
+        if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
+          idade--;
+        }
+        return idade;
+      }
+
+      const spanData = document.getElementById("data-nasc");
+      const spanIdade = document.getElementById("idade");
+      const dataNasc = spanData.dataset.nasc;
+      spanIdade.textContent = calcularIdade(dataNasc);
+    </script>
+  </body>
+</html>
